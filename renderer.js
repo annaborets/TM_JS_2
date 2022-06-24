@@ -48,6 +48,13 @@ export class Renderer {
         this.appendToParent(el);
     }
 
+    renderLoader() {
+        const el = document.createElement('div');
+        el.innerText = 'Loading...';
+
+        this.appendToParent(el);
+    }
+
     appendToParent(el) {
         this.wrapper.innerHTML = '';
         this.wrapper.appendChild(el);

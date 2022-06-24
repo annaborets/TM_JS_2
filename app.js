@@ -40,6 +40,8 @@ export class App {
     }
 
     async handleSearchSubmit(search) {
+        this.startLoading();
+
         try {
             const data = await this.apiClient.search(search);
 
@@ -50,6 +52,8 @@ export class App {
     }
 
     async handleGetAll() {
+        this.startLoading();
+
         try {
             const data = await this.apiClient.getAll();
 
@@ -60,6 +64,8 @@ export class App {
     }
 
     async handleGetMoreInfo(id) {
+        this.startLoading();
+
         try {
             const data = await this.apiClient.getOne(id);
 
@@ -67,7 +73,10 @@ export class App {
         } catch (error) {
             this.handleError(error);
         }
+    }
 
+    startLoading() {
+        this.renderer.renderLoader();
     }
 
     handleError(error) {

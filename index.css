@@ -37,7 +37,7 @@ h1 {
 .btn {
     background-color: #0a0a23;
     color: #fff;
-    border: none;
+    border: 1px solid black;
     border-radius: 10px;
     padding: 10px;
     min-height: 20px;
@@ -48,7 +48,7 @@ h1 {
 .btn:hover {
     background-color: #fff;
     color: #0a0a23;
-    border: 1px solid black;
+    border-color: transparent;
     transition: 0.2s;
 }
 
