@@ -1,0 +1,92 @@
+body {
+    box-sizing: border-box;
+    text-align: center;
+    background-color: gray;
+}
+
+h1 {
+    color: white;
+}
+
+.wrapper {
+    display: inline-block;
+}
+
+.list {
+    padding: 10px 20px;
+    list-style: none;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(177, 200, 207);
+    font-size: 1.5rem;
+    min-width: 300px;
+    border-radius: 10px;
+}
+
+.list__item {
+    display: flex;
+    flex-direction: row;
+    padding: 10px 0;
+    align-items: center;
+    min-width: 100%;
+    border-bottom: 1px solid black;
+}
+
+.btn {
+    background-color: #0a0a23;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    min-height: 20px;
+    min-width: 100px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #fff;
+    color: #0a0a23;
+    border: 1px solid black;
+    transition: 0.2s;
+}
+
+.homeBtn {
+    display: block;
+    margin: 0 auto;
+}
+
+.character {
+    margin-right: 30px;
+    align-self: start;
+    flex-basis: 200px;
+}
+
+.input {
+    padding: 8px;
+    border-radius: 10px;
+}
+
+.label {
+    font-size: 1.5rem;
+    margin-right: 15px;
+}
+
+.container {
+    background-color: lightgray;
+    padding: 20px;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    margin: 30px;
+}
+
+.personalInfo {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid black;
+}
+
+.error {
+    color: red;
+}
